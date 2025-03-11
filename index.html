@@ -62,9 +62,9 @@
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kunchang Li</a><sup>2,3</sup>,</span>
                     <span class="author-block">
-                      <a href="FOUR AUTHOR PERSONAL LINK" target="_blank">Yanbo Ding</a><sup>2,3</sup>,</span>
+                      <a href="FOUR AUTHOR PERSONAL LINK" target="_blank">Yanbo Ding</a><sup>2</sup>,</span>
                       <span class="author-block">
-                      <a href="COR AUTHOR PERSONAL LINK" target="_blank">Yali Wang</a><sup>1,2,3*</sup>,</span>
+                      <a href="COR AUTHOR PERSONAL LINK" target="_blank">Yali Wang</a><sup>2,3*</sup>,</span>
                   </span>
                   </div>
 
@@ -155,7 +155,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Despite the recent advancements in video stylization, most existing methods struggle to render videos with complex transitions based on open-ended user style descriptions. To address this, we introduce V-Stylist, a generic multi-agent system for video stylization that leverages a novel collaboration and reflection paradigm of multi-modal large language models. Specifically, V-Stylist is a systematic workflow with three key roles: (1) The Video Parser decomposes the input video into shots and generates text prompts for key shot content, enabling effective handling of complex transitions; (2) The Style Parser identifies user query styles and searches for matched models in a style tree, specifying vague style preferences through a robust tree-of-thought approach; (3) The Style Artist renders shots into the desired style using a multi-round self-reflection paradigm to adaptively adjust detail control. This design, mimicking human professionals, achieves a major breakthrough in effective and automatic video stylization. Moreover, we construct a new benchmark, Text-driven Video Stylization Benchmark (TVSBench), to evaluate complex video stylization based on open user queries. Extensive experiments show that V-Stylist achieves state-of-the-art performance, surpassing FRESCO and ControlVideo by 6.05% and 4.51% respectively in overall average metrics, marking a significant advance in video stylization.
           </p>
         </div>
       </div>
@@ -172,30 +172,30 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/teaser.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          V-Stylist is a multi-agent system for complex video stylization with open user query. It contains three key roles to address the primary challenges in video stylization.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Style_Parser.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Style Parser finds the most suitable stylization model, via a tree-of-thought searching paradigm.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Video_Parser.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Video Parser decomposes a video into several shots and prompts, via a video-to-shot prompting paradigm.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/Style_Artist.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Style Artist adaptively adjusts detail control for preferable shot rendering, via a multi-round style reflection paradigm.
       </h2>
     </div>
   </div>
